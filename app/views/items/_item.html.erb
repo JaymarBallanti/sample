@@ -1,0 +1,25 @@
+
+<table>
+  <tr>
+    <th><strong>Item Name:</strong></th>
+    <th><strong>Description:</strong></th>
+    <th><strong>SKU:</strong></th>
+    <th><strong>Cost Price:</strong></th>
+    <th><strong>Retail Price:</strong></th>
+    <th><strong>Date Sold:</strong></th>
+    <th></th>
+  </tr>
+
+  <tr>
+    <td><%= item.item_name %></td>
+    <td><%= item.description %></td>
+    <td><%= item.SKU %></td>
+    <td><%= item.cost_price %></td>
+    <td><%= item.retail_price %></td>
+    <td><%= item.date_sold %></td>
+    <td><%= link_to 'Remove Item', [item.sale, item],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+
+</table>
